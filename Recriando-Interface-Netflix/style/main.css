@@ -1,0 +1,112 @@
+:root{
+    /*Usar variável é viavel quando você já sabe a cor que será o site*/
+    --vermelho: #e50914; 
+    --preta: #141414;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Define que o conteudo não pode utrapassar o elemento | Tudo oq está dentro da caixa não ultrapassa a borda. */
+}
+
+/*elementos base*/
+body {
+    background: var(--preta) ; /*Coamando para usar variável*/
+    font-family: 'Arial', Times, serif;
+    color:white;
+
+}
+
+header .container{
+    display: flex; /*Joga todos os elementos na linha*/
+    align-items: center; /*Alinha os itens na vertical*/
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: "Arial Black", Times;
+    font-size: 40px;
+}
+
+header nav a{
+        text-decoration: none;
+        color: #aaa;
+        margin-right: 10px;
+}
+
+header nav a:hover{ /*Comando para realizar uma ação quando o usuário passar o mouse me cima*/
+    color:#fff;
+}
+
+/*FILME PRINCIPAL*/
+
+.filme-principal{
+    font-size: 15px;
+    background: linear-gradient(rgba(0, 0, 0,.50), rgba(0, 0, 0,.50)100%), url("owl/capa.jpg");
+
+    height: 400px;
+    background-size: cover; 
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center ; /*Sempre segue oq está no flex-direction*/
+    align-items: flex-start; /*Começa da esquerda*/
+
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 43px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50) ; /* Primeiro é o tom de vermelhor depois verde, depois azul e a camada alfa*/
+    border:none ;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*Muda o cursos quando o usuário passa o mouse*/
+    transition: .4s ease all; /*Coloca tempo apara acontecer as transisções da animação houver (no caso) */
+}
+
+.botao:hover{ /*Quando o usuário passar o mouse ele íra alterar as cores*/
+    background-color: white;
+    color: black;
+}
+
+.botao i{ /*Peguei o elemento I da classe botão*/
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+
+}
+
+.filme-principal .container{
+    width: 60%;
+
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}

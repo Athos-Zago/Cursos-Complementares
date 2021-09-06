@@ -1,0 +1,3 @@
+Dar funcoes aos boto~es
+Ver ifnromaçoes aparecer mais informações detalhadas
+Fazer uma nova roupagem para a ferramenta 

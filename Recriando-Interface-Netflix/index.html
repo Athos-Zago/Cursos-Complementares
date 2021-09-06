@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--Responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+    
+    <!--owl css -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="">Inicio</a>
+                <a href="">Séries</a>
+                <a href="">Filmes</a>
+                <a href="">Documentários</a>
+                <a href="">Bombando</a>
+                <a href="">Minha lista</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">LOCKE & KEY</h3>
+                <p class="descricao">Após o assassinato do pai, três irmãos se mudam com a mãe para uma casa antiga onde descobrem chaves mágicas que revelam poderes e segredos. A segunda temporada será lançada no segundo semestre de 2021.</p>
+                <div class="botoes"> <!--A div botoes não e filha direta do container e por padrão ela vem com o display block -->
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button  role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                         MAIS INFORMAÇÕES 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/mini1.jpg" alt="i1">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini2.jpg" alt="i2">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="i3">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="i4">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="i5">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="i6">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="i7">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="i8">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="i9">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="i10">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/ea21876a67.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+@media screen and (max-width:700px) { /*Quando a tela for menor que 700 px aplique isto*/
+    header .container{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+
+
+}
+
+@media screen and (min-width:700px){ /*Quando a tela for maior que 700 px aplique isto*/
+    .descricao{
+        width: 50%;
+    }
+}
